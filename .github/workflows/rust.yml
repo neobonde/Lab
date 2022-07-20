@@ -17,5 +17,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      working-directory: ./Rust/collection_challenge3/Cargo.toml
+      working-directory: Rust/collection_challenge3/Cargo.toml
       run: cargo build --verbose
