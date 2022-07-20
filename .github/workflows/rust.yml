@@ -15,10 +15,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: pwd
-    - run: ls
-    - working-directory: Rust
-      run: pwd
+    - run: |
+        pwd
+        ls -l
+        cd Rust
+        pwd
+        ls -l
     - uses: actions/checkout@v3
     - name: Build
       run: cargo build --verbose
